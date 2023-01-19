@@ -1,5 +1,3 @@
-import json
-
 import dash
 import dash_cytoscape as cyto
 import dash_html_components as html

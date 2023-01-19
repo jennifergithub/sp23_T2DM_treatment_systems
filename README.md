@@ -27,7 +27,8 @@ When you're ready to commit your changes,
 3. git push, this will push to your branch.
 
 When you want to edit on your branch but first have to pull from main:
-1. git fetch
-2. git pull
+1. Create a pull request in GitHub, [branch] <-- main.
+2. git fetch
+3. git pull
 
 Then, go to the browser and click on "new pull request", assign reviewers if needed

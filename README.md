@@ -1,6 +1,9 @@
 # sp23_T2DM_treatment_systems
 To run drug_combinations_graph.py, navigate to the repository folder locally and type the following command in the Terminal/Command Prompt: "python3 drug_combinations_graph.py", should launch to local browser.
 
+# Modeling DDIs with KG
+The knowledge graph shows the relationships between drugs, where nodes are the drugs, color-coordinated by drug class, and edges represent an adverse DDI. That is, the nodes connected by an edge should NOT be taken together. The edges are color-coordinated by classification of risk: mild, moderate, to severe, based on the acuity of the symptoms.
+
 # installing dependencies
 
 pip3 install -r requirements.txt

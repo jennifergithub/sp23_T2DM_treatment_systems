@@ -13,23 +13,25 @@ edge_list = []
 nx_edge_list = []
 node_list = []
 # read in the drug combinations CSV
-with open('drug_combinations.csv', newline='') as csvfile:
+with open('ddis.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # print(row)
         source = row['source']
-        target = row['target']
-        label = int(row['weight'])
+        if row['target'] != None:  # if target is present
+            target = row['target']
+            label = row['label']  # classification of risk
+            if target not in node_list:
+                node_list.append(target)
+            source_target_label = tuple(
+                (source, target, label))
+            edge_for_nx = [source, target]
+            nx_edge_list.append(edge_for_nx)
+            edge_list.append(source_target_label)
+        # label = int(row['weight'])
         # print(type(label)) should be int
         if source not in node_list:
             node_list.append(source)
-        if target not in node_list:
-            node_list.append(target)
-        source_target_label = tuple(
-            (source, target, label))
-        edge_for_nx = [source, target]
-        nx_edge_list.append(edge_for_nx)
-        edge_list.append(source_target_label)
 
 # create NetworkX object
 G = nx.Graph()
@@ -75,7 +77,7 @@ nodes = [
 # print(nodes)
 
 edges = [
-    {'data': {'id': source+'--'+target+'--'+str(label), 'source': source,
+    {'data': {'id': source+'--'+target+'--'+label, 'source': source,
               'target': target, 'label': label}}
     for source, target, label in (
         edge_list
@@ -156,15 +158,14 @@ app.layout = html.Div([
               Input('cytoscape-event-callbacks-2', 'mouseoverNodeData'))
 def displayTapNodeData(data):
     if data:
-        return "Taken with: " + str(neighbors_dict[data['label']])
+        return "Cannot be taken with: " + str(neighbors_dict[data['label']])
 
 
 @app.callback(Output('cytoscape-mouseoverEdgeData-output', 'children'),
               Input('cytoscape-event-callbacks-2', 'mouseoverEdgeData'))
 def displayTapEdgeData(data):
     if data:
-        return str(data['label']) + " patients have taken " + \
-            data['source'].upper() + " with " + data['target'].upper()
+        return "The DDI between " + str(data['source'].upper()) + " and " + str(data['target'].upper()) + " is classified as " + str(data['label'])
 
 
 if __name__ == '__main__':

@@ -13,7 +13,7 @@ edge_list = []
 nx_edge_list = []
 node_list = []
 # read in the drug combinations CSV
-with open('ddis.csv', newline='') as csvfile:
+with open('ddis_from_spreadsheet.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # print(row)
@@ -57,10 +57,6 @@ styles = {
     }
 }
 
-# print(node_list)
-# for node in node_list:
-#     print([n for n in G.predecessors(node)])
-# print(edge_list)
 
 nodes = [
     {
@@ -115,9 +111,15 @@ default_stylesheet = [
         }
     },
     {
-        'selector': '[label > 1000]',
+        'selector': '[label *= "Moderate"]',
         'style': {
             'line-color': 'red'
+        }
+    },
+    {
+        'selector': '[label *= "Mild"]',
+        'style': {
+            'line-color': 'green'
         }
     }
 ]
@@ -154,15 +156,15 @@ app.layout = html.Div([
 #                data['source'].upper() + " to " + data['target'].upper()
 
 
-@app.callback(Output('cytoscape-mouseoverNodeData-output', 'children'),
-              Input('cytoscape-event-callbacks-2', 'mouseoverNodeData'))
+@ app.callback(Output('cytoscape-mouseoverNodeData-output', 'children'),
+               Input('cytoscape-event-callbacks-2', 'mouseoverNodeData'))
 def displayTapNodeData(data):
     if data:
         return "Cannot be taken with: " + str(neighbors_dict[data['label']])
 
 
-@app.callback(Output('cytoscape-mouseoverEdgeData-output', 'children'),
-              Input('cytoscape-event-callbacks-2', 'mouseoverEdgeData'))
+@ app.callback(Output('cytoscape-mouseoverEdgeData-output', 'children'),
+               Input('cytoscape-event-callbacks-2', 'mouseoverEdgeData'))
 def displayTapEdgeData(data):
     if data:
         return "The DDI between " + str(data['source'].upper()) + " and " + str(data['target'].upper()) + " is classified as " + str(data['label'])

@@ -4,6 +4,13 @@ To run drug_combinations_graph.py, navigate to the repository folder locally and
 # Modeling DDIs with KG
 The knowledge graph shows the relationships between drugs, where nodes are the drugs, color-coordinated by drug class, and edges represent an adverse DDI. That is, the nodes connected by an edge should NOT be taken together. The edges are color-coordinated by classification of risk: mild, moderate, to severe, based on the acuity of the symptoms.
 
+# Current goals
+
+1. Taking excel spreadsheet and categorizing nodes in the graph, where drugs of the same class are the same color - DONE
+2. Clicking on an edge and seeing information about that DDI's mechanism
+3. Color coding the edge based on whether it's "mild", "moderate", or "severe" - DONE
+4. Adding pictures of drugs
+
 # installing dependencies
 
 pip3 install -r requirements.txt

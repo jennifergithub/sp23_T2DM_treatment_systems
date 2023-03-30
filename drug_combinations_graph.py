@@ -13,7 +13,10 @@ edge_list = []
 nx_edge_list = []
 node_list = []
 # read in the drug combinations CSV
-with open('ddis_from_spreadsheet.csv', newline='') as csvfile:
+
+csv_ddi = 'ddis_from_spreadsheet.csv'
+
+with open(csv_ddi, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # print(row)
@@ -88,6 +91,12 @@ default_stylesheet = [
             'label': 'data(label)'
         }
     },
+    # {
+    #     'selector': 'body',
+    #     'style': {
+    #         'background-color':'black'
+    #     }
+    # },
     {
         'selector': 'edge',
         'style': {
@@ -113,13 +122,19 @@ default_stylesheet = [
     {
         'selector': '[label *= "Moderate"]',
         'style': {
-            'line-color': 'red'
+            'line-color': '#ffc72b'
+        }
+    },
+    {
+        'selector': '[label *= "Severe"]',
+        'style': {
+            'line-color' : 'red'
         }
     },
     {
         'selector': '[label *= "Mild"]',
         'style': {
-            'line-color': 'green'
+            'line-color': '#62ff3b'
         }
     }
 ]

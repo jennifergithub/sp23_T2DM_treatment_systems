@@ -1,106 +1,106 @@
-source,target,label
-Metformin,glipizide ,Severe
-albiglutide,glipizide ,Moderate
-dulaglutide,repaglinide,Moderate
-exenatide,glipizide ,Moderate
-liraglutide,repaglinide,Moderate
-lixisenatide,glipizide ,Moderate
-semaglutide,repaglinide,Moderate
-alogliptin,repaglinide,Moderate
-linagliptin,nateglinide,Moderate
-saxagliptin,repaglinide,Moderate
-sitagliptin,nateglinide,Moderate
-nateglinide,Saxagliptin,Moderate
-repaglinide,Sitagliptin,Moderate
-chlorpropamide,Fluconazole,Moderate
-chlorpropamide,Miconazole,Moderate
-glimepiride,Fluconazole,Moderate
-glimepiride,Miconazole,Moderate
-glipizide,Fluconazole,Moderate
-glipizide,Miconazole,Moderate
-glyburide,Fluconazole,Moderate
-glyburide,Miconazole,Moderate
-tolbutamide,Fluconazole,Moderate
-tolbutamide,Miconazole,Moderate
-tolazamide,Fluconazole,Moderate
-tolazamide,Miconazole,Moderate
-gliclazide,Fluconazole,Moderate
-gliclazide,Miconazole,Moderate
-Metformin,Cimetidine,Mild
-Metformin,cephalexin,Mild
-Metformin,pyrimethamine,Mild
-Metformin,gliclazide,Severe
-Metformin,tolazamide,Severe
-Metformin,glipizide,Severe
-Metformin,chlorpropamide,Severe
-Metformin,glimepiride,Severe
-Metformin,glyburide,Severe
-Metformin,tolbutamide,Severe
-albiglutide,repaglinide,Moderate
-albiglutide,nateglinide,Moderate
-dulaglutide,repaglinide,Moderate
-dulaglutide,nateglinide,Moderate
-exenatide,repaglinide,Moderate
-exenatide,nateglinide,Moderate
-liraglutide,repaglinide,Moderate
-liraglutide,nateglinide,Moderate
-lixisenatide,repaglinide,Moderate
-lixisenatide,nateglinide,Moderate
-semaglutide,repaglinide,Moderate
-semaglutide,nateglinide,Moderate
-alogliptin,repaglinide,Moderate
-alogliptin,nateglinide,Moderate
-linagliptin,repaglinide,Moderate
-linagliptin,nateglinide,Moderate
-saxagliptin,repaglinide,Moderate
-saxagliptin,nateglinide,Moderate
-sitagliptin,repaglinide,Moderate
-sitagliptin,nateglinide,Moderate
-nateglinide,alogliptin,Moderate
-nateglinide,saxagliptin,Moderate
-nateglinide,linagliptin,Moderate
-nateglinide,sitagliptin,Moderate
-repaglinide,alogliptin,Moderate
-repaglinide,saxagliptin,Moderate
-repaglinide,linagliptin,Moderate
-repaglinide,sitagliptin,Moderate
-canagliflozin,gliclazide,Moderate
-canagliflozin,tolazamide,Moderate
-canagliflozin,glipizide,Moderate
-canagliflozin,chlorpropamide,Moderate
-canagliflozin,glimepiride,Moderate
-canagliflozin,glyburide,Moderate
-canagliflozin,tolbutamide,Moderate
-dapagliflozin,gliclazide,Moderate
-dapagliflozin,tolazamide,Moderate
-dapagliflozin,glipizide,Moderate
-dapagliflozin,chlorpropamide,Moderate
-dapagliflozin,glimepiride,Moderate
-dapagliflozin,glyburide,Moderate
-dapagliflozin,tolbutamide,Moderate
-empagliflozin,gliclazide,Moderate
-empagliflozin,tolazamide,Moderate
-empagliflozin,glipizide,Moderate
-empagliflozin,chlorpropamide,Moderate
-empagliflozin,glimepiride,Moderate
-empagliflozin,glyburide,Moderate
-empagliflozin,tolbutamide,Moderate
-ertugliflozin,gliclazide,Moderate
-ertugliflozin,tolazamide,Moderate
-ertugliflozin,glipizide,Moderate
-ertugliflozin,chlorpropamide,Moderate
-ertugliflozin,glimepiride,Moderate
-ertugliflozin,glyburide,Moderate
-ertugliflozin,tolbutamide,Moderate
-nateglinide,dulaglutide,Moderate
-nateglinide,semaglutide,Moderate
-nateglinide,albiglutide,Moderate
-nateglinide,exenatide,Moderate
-nateglinide,liraglutide,Moderate
-nateglinide,lixisenatide,Moderate
-repaglinide,dulaglutide,Moderate
-repaglinide,semaglutide,Moderate
-repaglinide,albiglutide,Moderate
-repaglinide,exenatide,Moderate
-repaglinide,liraglutide,Moderate
-repaglinide,lixisenatide,Moderate
+source,target,label,description
+Metformin,glipizide ,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+albiglutide,glipizide ,Moderate,hypoglycemia risks
+dulaglutide,repaglinide,Moderate,hypoglycemia risks
+exenatide,glipizide ,Moderate,hypoglycemia risks
+liraglutide,repaglinide,Moderate,hypoglycemia risks
+lixisenatide,glipizide ,Moderate,hypoglycemia risks
+semaglutide,repaglinide,Moderate,hypoglycemia risks
+alogliptin,repaglinide,Moderate,hypoglycemia risks
+linagliptin,nateglinide,Moderate,hypoglycemia risks
+saxagliptin,repaglinide,Moderate,hypoglycemia risks
+sitagliptin,nateglinide,Moderate,hypoglycemia risks
+nateglinide,Saxagliptin,Moderate,hypoglycemia risks
+repaglinide,Sitagliptin,Moderate,hypoglycemia risks
+chlorpropamide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+chlorpropamide,Miconazole,Moderate,Elevated risk of hypoglycemia
+glimepiride,Fluconazole,Moderate,Elevated risk of hypoglycemia
+glimepiride,Miconazole,Moderate,Elevated risk of hypoglycemia
+glipizide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+glipizide,Miconazole,Moderate,Elevated risk of hypoglycemia
+glyburide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+glyburide,Miconazole,Moderate,Elevated risk of hypoglycemia
+tolbutamide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+tolbutamide,Miconazole,Moderate,Elevated risk of hypoglycemia
+tolazamide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+tolazamide,Miconazole,Moderate,Elevated risk of hypoglycemia
+gliclazide,Fluconazole,Moderate,Elevated risk of hypoglycemia
+gliclazide,Miconazole,Moderate,Elevated risk of hypoglycemia
+Metformin,Cimetidine,Mild,plasma values and adverse event rate increase
+Metformin,cephalexin,Mild,plasma values and adverse event rate increase
+Metformin,pyrimethamine,Mild,plasma values and adverse event rate increase
+Metformin,chlorpropamide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,tolbutamide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,glyburide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,glimepiride,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,tolazamide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,glipizide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+Metformin,gliclazide,Severe,Increased Risk of Cardiovascular Disease or All-Cause Mortality
+albiglutide,repaglinide,Moderate,hypoglycemia risks
+albiglutide,nateglinide,Moderate,hypoglycemia risks
+dulaglutide,repaglinide,Moderate,hypoglycemia risks
+dulaglutide,nateglinide,Moderate,hypoglycemia risks
+exenatide,repaglinide,Moderate,hypoglycemia risks
+exenatide,nateglinide,Moderate,hypoglycemia risks
+liraglutide,repaglinide,Moderate,hypoglycemia risks
+liraglutide,nateglinide,Moderate,hypoglycemia risks
+lixisenatide,repaglinide,Moderate,hypoglycemia risks
+lixisenatide,nateglinide,Moderate,hypoglycemia risks
+semaglutide,repaglinide,Moderate,hypoglycemia risks
+semaglutide,nateglinide,Moderate,hypoglycemia risks
+alogliptin,repaglinide,Moderate,hypoglycemia risks
+alogliptin,nateglinide,Moderate,hypoglycemia risks
+linagliptin,repaglinide,Moderate,hypoglycemia risks
+linagliptin,nateglinide,Moderate,hypoglycemia risks
+saxagliptin,repaglinide,Moderate,hypoglycemia risks
+saxagliptin,nateglinide,Moderate,hypoglycemia risks
+sitagliptin,repaglinide,Moderate,hypoglycemia risks
+sitagliptin,nateglinide,Moderate,hypoglycemia risks
+nateglinide,alogliptin,Moderate,hypoglycemia risks
+nateglinide,sitagliptin,Moderate,hypoglycemia risks
+nateglinide,saxagliptin,Moderate,hypoglycemia risks
+nateglinide,linagliptin,Moderate,hypoglycemia risks
+repaglinide,alogliptin,Moderate,hypoglycemia risks
+repaglinide,sitagliptin,Moderate,hypoglycemia risks
+repaglinide,saxagliptin,Moderate,hypoglycemia risks
+repaglinide,linagliptin,Moderate,hypoglycemia risks
+canagliflozin,chlorpropamide,Moderate,Can result to hypoglycemia
+canagliflozin,tolbutamide,Moderate,Can result to hypoglycemia
+canagliflozin,glyburide,Moderate,Can result to hypoglycemia
+canagliflozin,glimepiride,Moderate,Can result to hypoglycemia
+canagliflozin,tolazamide,Moderate,Can result to hypoglycemia
+canagliflozin,glipizide,Moderate,Can result to hypoglycemia
+canagliflozin,gliclazide,Moderate,Can result to hypoglycemia
+dapagliflozin,chlorpropamide,Moderate,
+dapagliflozin,tolbutamide,Moderate,
+dapagliflozin,glyburide,Moderate,
+dapagliflozin,glimepiride,Moderate,
+dapagliflozin,tolazamide,Moderate,
+dapagliflozin,glipizide,Moderate,
+dapagliflozin,gliclazide,Moderate,
+empagliflozin,chlorpropamide,Moderate,
+empagliflozin,tolbutamide,Moderate,
+empagliflozin,glyburide,Moderate,
+empagliflozin,glimepiride,Moderate,
+empagliflozin,tolazamide,Moderate,
+empagliflozin,glipizide,Moderate,
+empagliflozin,gliclazide,Moderate,
+ertugliflozin,chlorpropamide,Moderate,
+ertugliflozin,tolbutamide,Moderate,
+ertugliflozin,glyburide,Moderate,
+ertugliflozin,glimepiride,Moderate,
+ertugliflozin,tolazamide,Moderate,
+ertugliflozin,glipizide,Moderate,
+ertugliflozin,gliclazide,Moderate,
+nateglinide,lixisenatide,Moderate,
+nateglinide,liraglutide,Moderate,
+nateglinide,albiglutide,Moderate,
+nateglinide,exenatide,Moderate,
+nateglinide,dulaglutide,Moderate,
+nateglinide,semaglutide,Moderate,
+repaglinide,lixisenatide,Moderate,
+repaglinide,liraglutide,Moderate,
+repaglinide,albiglutide,Moderate,
+repaglinide,exenatide,Moderate,
+repaglinide,dulaglutide,Moderate,
+repaglinide,semaglutide,Moderate,

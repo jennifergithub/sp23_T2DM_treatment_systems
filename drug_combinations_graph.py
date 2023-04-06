@@ -13,18 +13,22 @@ edge_list = []
 nx_edge_list = []
 node_list = []
 # read in the drug combinations CSV
-with open('ddis_from_spreadsheet.csv', newline='') as csvfile:
+
+csv_ddi = 'ddis_from_spreadsheet.csv'
+
+with open(csv_ddi, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # print(row)
         source = row['source']
         if row['target'] != None:  # if target is present
             target = row['target']
+            description = row['description']
             label = row['label']  # classification of risk
             if target not in node_list:
                 node_list.append(target)
             source_target_label = tuple(
-                (source, target, label))
+                (source, target, label, description))
             edge_for_nx = [source, target]
             nx_edge_list.append(edge_for_nx)
             edge_list.append(source_target_label)
@@ -74,8 +78,8 @@ nodes = [
 
 edges = [
     {'data': {'id': source+'--'+target+'--'+label, 'source': source,
-              'target': target, 'label': label}}
-    for source, target, label in (
+              'target': target, 'label': label, 'description': description}}
+    for source, target, label, description in (
         edge_list
     )
 ]
@@ -88,6 +92,12 @@ default_stylesheet = [
             'label': 'data(label)'
         }
     },
+    # {
+    #     'selector': 'body',
+    #     'style': {
+    #         'background-color':'black'
+    #     }
+    # },
     {
         'selector': 'edge',
         'style': {
@@ -113,13 +123,19 @@ default_stylesheet = [
     {
         'selector': '[label *= "Moderate"]',
         'style': {
-            'line-color': 'red'
+            'line-color': '#ffc72b'
+        }
+    },
+    {
+        'selector': '[label *= "Severe"]',
+        'style': {
+            'line-color' : 'red'
         }
     },
     {
         'selector': '[label *= "Mild"]',
         'style': {
-            'line-color': 'green'
+            'line-color': '#62ff3b'
         }
     }
 ]
@@ -167,7 +183,8 @@ def displayTapNodeData(data):
                Input('cytoscape-event-callbacks-2', 'mouseoverEdgeData'))
 def displayTapEdgeData(data):
     if data:
-        return "The DDI between " + str(data['source'].upper()) + " and " + str(data['target'].upper()) + " is classified as " + str(data['label'])
+        # return "The DDI between " + str(data['source'].upper()) + " and " + str(data['target'].upper()) + " is classified as " + str(data['label'])
+        return "The DDI between " + str(data['source'].upper()) + " and " + str(data['target'].upper()) + " is classified as " + str(data['label']) + ", Adverse effect: " + str(data['description'])
 
 
 if __name__ == '__main__':

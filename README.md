@@ -14,6 +14,9 @@ these are the ones you'll need to run
 - drug_combinations_graph.py which takes in ddis_from_spreadsheet.csv and
   generates the graph
 
+# Modeling DDIs with KG
+The knowledge graph shows the relationships between drugs, where nodes are the drugs, color-coordinated by drug class, and edges represent an adverse DDI. That is, the nodes connected by an edge should NOT be taken together. The edges are color-coordinated by classification of risk: mild, moderate, to severe, based on the acuity of the symptoms.
+
 # installing dependencies
 
 pip3 install -r requirements.txt
@@ -42,9 +45,9 @@ When you're ready to commit your changes,
 3. git push, this will push to your branch.
 
 When you want to edit on your branch but first have to pull from main:
-
-1. git fetch
-2. git pull
+1. Create a pull request in GitHub, [branch] <-- main.
+2. git fetch
+3. git pull
 
 Then, go to the browser and click on "new pull request", assign reviewers if
 needed
